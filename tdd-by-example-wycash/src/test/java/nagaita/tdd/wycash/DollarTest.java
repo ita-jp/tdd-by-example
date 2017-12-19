@@ -20,4 +20,10 @@ public class DollarTest {
 		assertThat(product.amount, is(10));
 	}
 
+	@Test
+	public void equality() throws Exception {
+		assertTrue(new Dollar(5).equals(new Dollar(5)));
+		assertFalse(new Dollar(5).equals(new Dollar(6)));
+	}
+
 }
