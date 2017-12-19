@@ -7,6 +7,9 @@ Note
 * hashCode
 * nullとの等価性
 * オブジェクトとの等価性
+* DollarとFrancの重複
+* equalsの一般化
+* timesの一般化
 * --
 * lombok入れる
 
@@ -17,3 +20,4 @@ Note
 * Dollarの副作用
 * equals
 * amountのプライベート化
+* 5CHF*2=10CHF
