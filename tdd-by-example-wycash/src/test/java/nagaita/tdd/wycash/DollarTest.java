@@ -13,10 +13,11 @@ public class DollarTest {
 		Dollar five = new Dollar(5);
 
 		// ## Act ##
-		five.times(2);
-		
+		Dollar product = five.times(2);
+
 		// ## Assert ##
-		assertThat(five.amount, is(10));
+		assertThat(five.amount, is(5));
+		assertThat(product.amount, is(10));
 	}
 
 }
