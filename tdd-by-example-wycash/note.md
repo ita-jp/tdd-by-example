@@ -8,8 +8,8 @@ Note
 * nullとの等価性
 * オブジェクトとの等価性
 * DollarとFrancの重複
-* equalsの一般化
 * timesの一般化
+* DollarとFrancの比較
 * --
 * lombok入れる
 
@@ -21,3 +21,4 @@ Note
 * equals
 * amountのプライベート化
 * 5CHF*2=10CHF
+* equalsの一般化
