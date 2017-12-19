@@ -9,7 +9,7 @@ Note
 * オブジェクトとの等価性
 * DollarとFrancの重複
 * timesの一般化
-* DollarとFrancの比較
+* 通貨、財務ドメインでDollarとFrancの比較をするべき
 * --
 * lombok入れる
 
@@ -22,3 +22,4 @@ Note
 * amountのプライベート化
 * 5CHF*2=10CHF
 * equalsの一般化
+* DollarとFrancの比較
