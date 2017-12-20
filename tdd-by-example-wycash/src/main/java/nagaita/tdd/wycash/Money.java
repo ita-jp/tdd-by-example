@@ -1,6 +1,6 @@
 package nagaita.tdd.wycash;
 
-public abstract class Money {
+public class Money {
 
 	protected int amount;
 	protected String currency;
@@ -18,7 +18,9 @@ public abstract class Money {
 		this.currency = currency;
 	}
 
-	abstract Money times(int multiplier);
+	public Money times(int multiplier) {
+		return new Money(amount * multiplier, currency);
+	}
 
 	public String currency() {
 		return currency;
@@ -27,6 +29,11 @@ public abstract class Money {
 	@Override
 	public boolean equals(Object other) {
 		Money otherMoney = (Money) other;
-		return (this.amount == otherMoney.amount) && this.getClass().equals(other.getClass());
+		return (this.amount == otherMoney.amount) && this.currency.equals(otherMoney.currency());
+	}
+
+	@Override
+	public String toString() {
+		return amount + " " + currency;
 	}
 }

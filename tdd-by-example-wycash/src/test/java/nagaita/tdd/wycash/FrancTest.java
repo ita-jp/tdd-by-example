@@ -26,6 +26,7 @@ public class FrancTest {
 	public void equality() throws Exception {
 		assertTrue(Money.franc(5).equals(Money.franc(5)));
 		assertFalse(Money.franc(5).equals(Money.franc(6)));
+		assertTrue(new Money(1, "CHF").equals(new Franc(1, "CHF")));
 	}
 
 	@Test
