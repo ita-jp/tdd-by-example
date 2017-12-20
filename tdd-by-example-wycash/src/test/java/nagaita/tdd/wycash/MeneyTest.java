@@ -8,7 +8,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
-public class DollarTest {
+public class MeneyTest {
 
 	@Test
 	public void multiplication() throws Exception {
@@ -31,7 +31,8 @@ public class DollarTest {
 
 	@Test
 	public void currency() throws Exception {
-		assertThat("USD", is(Dollar.dollar(0).currency()));
+		assertThat("USD", is(Money.dollar(0).currency()));
+		assertThat("CHF", is(Money.franc(0).currency()));
 	}
 
 }
