@@ -10,6 +10,7 @@ Note
 * DollarとFrancの重複
 * timesの一般化
 * 通貨、財務ドメインでDollarとFrancの比較をするべき
+* FrancTest#multiplicationの削除
 * --
 * lombok入れる
 

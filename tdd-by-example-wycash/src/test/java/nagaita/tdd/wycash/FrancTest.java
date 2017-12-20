@@ -11,19 +11,19 @@ public class FrancTest {
 	@Test
 	public void multiplication() throws Exception {
 		// ## Arrange ##
-		Franc five = new Franc(5);
+		Money five = Money.franc(5);
 
 		// ## Act ##
 
 		// ## Assert ##
-		assertEquals(five.times(2), new Franc(10));
-		assertEquals(five.times(3), new Franc(15));
+		assertEquals(five.times(2), Money.franc(10));
+		assertEquals(five.times(3), Money.franc(15));
 	}
 
 	@Test
 	public void equality() throws Exception {
-		assertTrue(new Franc(5).equals(new Franc(5)));
-		assertFalse(new Franc(5).equals(new Franc(6)));
+		assertTrue(Money.franc(5).equals(Money.franc(5)));
+		assertFalse(Money.franc(5).equals(Money.franc(6)));
 	}
 
 }
