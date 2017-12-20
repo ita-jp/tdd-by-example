@@ -2,8 +2,10 @@ package nagaita.tdd.wycash;
 
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 public class FrancTest {
@@ -26,4 +28,8 @@ public class FrancTest {
 		assertFalse(Money.franc(5).equals(Money.franc(6)));
 	}
 
+	@Test
+	public void currency() throws Exception {
+		assertThat("CHF", is(Money.franc(0).currency()));
+	}
 }
